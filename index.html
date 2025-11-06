@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parking Detection Results</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background: #ffffff;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      .stats {
+        margin-bottom: 20px;
+        font-size: 18px;
+      }
+
+      .stats p {
+        margin: 5px 0;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        border: 1px solid #ccc;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Parking Detection Results</h1>
+      <div class="stats">
+        <p><strong>Open Spots:</strong> ${stats.openCount}</p>
+        <p><strong>Occupied Spots:</strong> ${stats.occupied}</p>
+      </div>
+      <img
+        src="data:image/jpeg;base64,${imageData}"
+        alt="Annotated parking lot"
+      />
+    </div>
+  </body>
+</html>
