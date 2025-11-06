@@ -65,7 +65,7 @@ function uploadToColab() {
                     try {
                         const result = JSON.parse(data);
                         console.log('Detection complete!');
-                        console.log(`   Free: ${result.open}`);
+                        console.log(`   Free: ${result.openCount}`);
                         console.log(`   Occupied: ${result.occupied}`);
                         console.log(`   Total: ${result.total}\n`);
                         resolve(result);
@@ -153,7 +153,7 @@ function createHTML(stats, imageBuffer) {
         <h1>Parking Detection Results</h1>
         
         <div class="stats">
-            <p><strong>Open Spots:</strong> ${stats.open}</p>
+            <p><strong>Open Spots:</strong> ${stats.openCount}</p>
             <p><strong>Occupied Spots:</strong> ${stats.occupied}</p>
         </div>
         
