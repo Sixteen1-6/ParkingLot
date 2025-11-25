@@ -38,11 +38,6 @@
         margin-bottom: 10px;
       }
       
-      .timestamp {
-        opacity: 0.9;
-        font-size: 14px;
-      }
-      
       .content {
         padding: 30px;
       }
@@ -201,7 +196,6 @@
     <div class="container">
       <div class="header">
         <h1> Parking Detection Results</h1>
-        <div class="timestamp" id="timestamp"></div>
       </div>
       
       <div class="content">
@@ -248,10 +242,6 @@
     </div>
     
     <script>
-      // Set timestamp
-      const now = new Date();
-      document.getElementById('timestamp').textContent = 
-        `Last updated: ${now.toLocaleString()}`;
       
       // Calculate and display occupancy percentage
       const openCount = ${stats.openCount || 0};
@@ -267,3 +257,4 @@
     </script>
   </body>
 </html>
+
