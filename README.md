@@ -18,8 +18,8 @@ YOLO-based parking lot occupancy detection with a Python Flask API and a Node.js
 ## Installation and Runtime Instructions
 
 1. Clone and enter the project
-    git clone https://github.com/USERNAME/REPO_NAME.git
-    cd REPO_NAME
+    git clone https://github.com/Sixteen1-6/ParkingLot.git
+    cd ParkingLot
 
 2. Create and Activate a virtual environment:
     python3 -m venv venv
